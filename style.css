@@ -1,20 +1,120 @@
-section {
-    
+section {}
+
+#phoneheader {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#tabletheader {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#desktopheader {
+    width: 100%;
+    height: auto;
+    display: none;
 }
 
 .Subtitle {
     font-family: Quattrocento;
+
 }
 
 .WhiteTitle {
     font-family: Quicksand;
+
 }
 
 .GreenTitle {
     font-family: Quicksand;
+
 }
 
 p {
     font-family: Calibri;
+
 }
 
+#Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "Monthly"
+        "Green"
+        "Climate"
+        "Newsletter"
+        "Contact";
+}
+
+#MonthlyTip {
+    grid-area: Monthly;
+    background: #6bd36b;
+}
+
+#GreenBalance {
+    grid-area: Green;
+    background: #429333;
+}
+
+#Climate {
+    grid-area: Climate;
+    background: #6bd36b;
+}
+
+#Newsletter {
+    grid-area: Newsletter;
+    background: #429333;
+}
+
+#Contact {
+    grid-area: Contact;
+    background: #6bd36b;
+}
+
+@media screen and (min-width: 500px) {
+    #phoneheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #tabletheader {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #desktopheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1300px) {
+    #phoneheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #tabletheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #desktopheader {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
