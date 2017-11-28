@@ -2,6 +2,12 @@ section {
     
 }
 
+#headerimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .Subtitle {
     font-family: Quattrocento;
 }
@@ -16,5 +22,42 @@ section {
 
 p {
     font-family: Calibri;
+}
+
+#Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "Monthly"
+        "Green"
+        "Climate"
+        "Newsletter"
+        "Contact";
+}
+
+#MonthlyTip {
+    grid-area: Monthly;
+    background: green;
+}
+
+#GreenBalance {
+    grid-area: Green;
+    background: blue;
+}
+
+#Climate {
+    grid-area: Climate;
+    background: red;
+}
+
+#Newsletter {
+    grid-area: Newsletter;
+    background: pink;
+}
+
+#Contact {
+    grid-area: Contact;
+    background: yellow;
 }
 
