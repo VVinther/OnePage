@@ -52,27 +52,27 @@ p {
 
 #MonthlyTip {
     grid-area: Monthly;
-    background: green;
+    background: #6bd36b;
 }
 
 #GreenBalance {
     grid-area: Green;
-    background: blue;
+    background: #429333;
 }
 
 #Climate {
     grid-area: Climate;
-    background: red;
+    background: #6bd36b;
 }
 
 #Newsletter {
     grid-area: Newsletter;
-    background: pink;
+    background: #429333;
 }
 
 #Contact {
     grid-area: Contact;
-    background: yellow;
+    background: #6bd36b;
 }
 
 @media screen and (min-width: 500px) {
