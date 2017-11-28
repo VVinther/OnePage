@@ -1,34 +1,48 @@
-section {
-    
-}
+section {}
 
-#headerimg {
+#phoneheader {
     width: 100%;
     height: auto;
     display: block;
 }
 
+#tabletheader {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#desktopheader {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
 .Subtitle {
     font-family: Quattrocento;
+
 }
 
 .WhiteTitle {
     font-family: Quicksand;
+
 }
 
 .GreenTitle {
     font-family: Quicksand;
+
 }
 
 p {
     font-family: Calibri;
+
 }
 
 #Grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "Monthly"
         "Green"
         "Climate"
@@ -61,3 +75,46 @@ p {
     background: yellow;
 }
 
+@media screen and (min-width: 500px) {
+    #phoneheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #tabletheader {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #desktopheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1300px) {
+    #phoneheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #tabletheader {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    #desktopheader {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
