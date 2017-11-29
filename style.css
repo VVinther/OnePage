@@ -184,10 +184,11 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Green Green Contact" "Newsletter Newsletter Contact";
-        margin: 10%;
+        width: 800px;
+        margin: auto;
     }
 /* BAGGRUNDSBILLEDER DESKTOP */
-/*
+
     #MonthlyTip {
         background-image: url(img/desktop_maanedenstip.png);
         background-repeat: no-repeat;
@@ -217,5 +218,5 @@ p {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-*/
+
 }
