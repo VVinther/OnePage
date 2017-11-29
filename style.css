@@ -19,7 +19,7 @@ section {}
     display: none;
 }
 
-/* TITLES */
+/* TEXT */
 .Subtitle {
     font-family: Quattrocento;
 
@@ -41,7 +41,7 @@ p {
 }
 
 .GridBox {
-    padding: 1em
+    padding: 2em
 }
 
 /* PHONE */
