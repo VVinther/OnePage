@@ -38,6 +38,10 @@ p {
 
 }
 
+.GridBox {
+    padding: 1em
+}
+
 #Grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -52,27 +56,27 @@ p {
 
 #MonthlyTip {
     grid-area: Monthly;
-    background: #6bd36b;
+    background: white;
 }
 
 #GreenBalance {
     grid-area: Green;
-    background: #429333;
+    background: rgb(70, 225, 86);
 }
 
 #Climate {
     grid-area: Climate;
-    background: #6bd36b;
+    background: rgb(219, 240, 205);
 }
 
 #Newsletter {
     grid-area: Newsletter;
-    background: #429333;
+    background: rgb(221, 255, 226);
 }
 
 #Contact {
     grid-area: Contact;
-    background: #6bd36b;
+    background: rgb(97, 255, 94);
 }
 
 @media screen and (min-width: 500px) {
@@ -92,6 +96,17 @@ p {
         width: 100%;
         height: auto;
         display: none;
+    }
+    
+    #Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
+        grid-template-areas:
+        "Monthly Monthly Monthly"
+        "Green Green Climate"
+        "Newsletter Newsletter Newsletter"
+        "Contact Contact Contact";
     }
 
 }
@@ -115,6 +130,17 @@ p {
         width: 100%;
         height: auto;
         display: block;
+    }
+    
+    #Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "Monthly Monthly Monthly"
+        "Green Green Climate"
+        "Green Green Contact"
+        "Newsletter Newsletter Contact";
     }
 
 }
