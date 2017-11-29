@@ -54,41 +54,41 @@ p {
 #MonthlyTip {
     grid-area: Monthly;
     background: white;
-    background-image: url(img/phone_maanedenstip.png);
+    /*background-image: url(img/phone_maanedenstip.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 
 #GreenBalance {
     grid-area: Green;
     background: rgb(70, 225, 86);
-    background-image: url(img/phone_groenbalance.png);
+    /*background-image: url(img/phone_groenbalance.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 
 #Climate {
     grid-area: Climate;
     background: rgb(219, 240, 205);
-    background-image: url(img/phone_miljoe.png);
+    /*background-image: url(img/phone_miljoe.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 
 #Newsletter {
     grid-area: Newsletter;
     background: rgb(221, 255, 226);
-    background-image: url(img/phone_nyhedsbrev.png);
+    /*background-image: url(img/phone_nyhedsbrev.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 
 #Contact {
     grid-area: Contact;
     background: rgb(97, 255, 94);
-    background-image: url(img/phone_kontakt.png);
+    /*background-image: url(img/phone_kontakt.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 
 
@@ -119,7 +119,8 @@ p {
         grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Newsletter Newsletter Newsletter" "Contact Contact Contact";
         margin: 1em;
     }
-
+/* BAGGRUNDSBILLEDER TABLET */
+/*
     #MonthlyTip {
         background-image: url(img/tablet_maanedenstip.png);
         background-repeat: no-repeat;
@@ -154,7 +155,7 @@ p {
         background-size: 100%;
         background-position: center;
     }
-
+*/
 }
 
 
@@ -185,7 +186,8 @@ p {
         grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Green Green Contact" "Newsletter Newsletter Contact";
         margin: 10%;
     }
-
+/* BAGGRUNDSBILLEDER DESKTOP */
+/*
     #MonthlyTip {
         background-image: url(img/desktop_maanedenstip.png);
         background-repeat: no-repeat;
@@ -215,5 +217,5 @@ p {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-
+*/
 }
