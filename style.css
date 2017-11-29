@@ -53,30 +53,40 @@ p {
     grid-area: Monthly;
     background: white;
     background-image: url(img/phone_maanedenstip.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #GreenBalance {
     grid-area: Green;
     background: rgb(70, 225, 86);
     background-image: url(img/phone_groenbalance.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #Climate {
     grid-area: Climate;
     background: rgb(219, 240, 205);
     background-image: url(img/phone_miljoe.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #Newsletter {
     grid-area: Newsletter;
     background: rgb(221, 255, 226);
     background-image: url(img/phone_nyhedsbrev.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #Contact {
     grid-area: Contact;
     background: rgb(97, 255, 94);
     background-image: url(img/phone_kontakt.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 @media screen and (min-width: 500px) {
@@ -103,26 +113,42 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 2fr 1fr 1fr;
         grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Newsletter Newsletter Newsletter" "Contact Contact Contact";
+        margin: 1em;
     }
 
     #MonthlyTip {
         background-image: url(img/tablet_maanedenstip.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
     }
 
     #GreenBalance {
         background-image: url(img/tablet_groenbalance.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
     }
 
     #Climate {
         background-image: url(img/tablet_miljoe.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
     }
 
     #Newsletter {
         background-image: url(img/tablet_nyhedsbrev.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
     }
 
     #Contact {
         background-image: url(img/tablet_kontakt.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
     }
 
 }
@@ -153,26 +179,37 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Green Green Contact" "Newsletter Newsletter Contact";
+        margin: 10%;
     }
-    
+
     #MonthlyTip {
         background-image: url(img/desktop_maanedenstip.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     #GreenBalance {
         background-image: url(img/desktop_groenbalance.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     #Climate {
         background-image: url(img/desktop_miljoe.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     #Newsletter {
         background-image: url(img/desktop_nyhedsbrev.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     #Contact {
         background-image: url(img/desktop_kontakt.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
 }
