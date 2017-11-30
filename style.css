@@ -338,17 +338,33 @@ p {
     #MonthlyTip {
         background-image: url(img/desktop_maanedenstip.png);
     }
+    
+    #MonthlyTip1 {
+        padding-left: 2em;
+    }
 
+    #Kalkfjerner {
+        padding-left: 3em;
+    }
+    
+    #MonthlySub {
+        padding-left: 4.5em;
+    }
+    
+    #liste {
+        padding-left: 6em;
+    }
+    
     #GreenBalance {
         background-image: url(img/desktop_groenbalance.png);
     }
     
     #GreenBal {
-    padding-left: 7.3em;
+    padding-left: 5em;
     }
     
     #GreenBalText {
-    padding-left: 0em;
+    padding-left: 8em;
     padding-right: 0em;
     padding-top: 0em;
     }
@@ -368,8 +384,13 @@ p {
         background-image: url(img/desktop_nyhedsbrev.png);
     }
     
+    #Nlp {
+        padding-top: 1.5em;
+    }
+    
     #formular {
-    padding-left: 0em;
+    padding-left: 2em;
+        padding-top: 1.5em;
     }
 
     #Contact {
@@ -377,17 +398,16 @@ p {
     }
     
     .WhiteTitle {
-    text-align: right;
-    padding-right: 0em;
+    padding: 0em;
+    text-align: center
     }
     
     #ContactSub { 
-        padding-left: 0em;
+        padding-left: 2em;
     }
-
     
     #kontaktinfo {
-        padding-left: 0em;
+        padding-left: 3em;
     }
 
 
