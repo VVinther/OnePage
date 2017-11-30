@@ -5,6 +5,7 @@ section {}
     width: 100%;
     height: auto;
     display: block;
+    min-width: 550px;
 }
 
 #tabletheader {
@@ -19,7 +20,7 @@ section {}
     display: none;
 }
 
-/* TITLES */
+/* TEXT */
 .Subtitle {
     font-family: Quattrocento;
 
@@ -41,7 +42,7 @@ p {
 }
 
 .GridBox {
-    padding: 1em
+    padding: 2em
 }
 
 /* PHONE */
@@ -76,6 +77,20 @@ p {
     background-position: center;
 }
 
+#MonthlyTip1 {
+    font-family: Quicksand;
+}
+
+#Kalkfjerner {
+    font-family: Quicksand;
+    font-size: 1.3em;
+}
+
+#MonthlySub {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
 #GreenBalance {
     grid-area: Green;
     background: rgb(70, 225, 86);
@@ -88,7 +103,7 @@ p {
 #GreenBal {
     font-family: Quicksand;
     color: white;
-    text-align: center;
+    padding-left: 7.3em;
 }
 
 #GreenBalText {
@@ -99,7 +114,7 @@ p {
 
 #Climate {
     grid-area: Climate;
-    background: rgb(219, 240, 205);
+    background: ffffff;
     background-image: url(img/phone_miljoe.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -138,6 +153,21 @@ p {
     text-align: center
 }
 
+#formular {
+    font-family: calibri;
+    padding-left: 7em;
+    padding-top: 1em;
+}
+
+#submit {
+    background: #00a213;
+    color: white;
+    border-color: #00710d;
+    height: 25px;
+    width: 100px;
+    text-shadow: none;
+}
+
 #Contact {
     grid-area: Contact;
     background: rgb(35, 240, 110);
@@ -159,6 +189,7 @@ p {
     font-size: 1em;
     font-style: italic; 
     padding-left: 5em;
+    font-family: Calibri;
 }
 
 #kontaktinfo {
@@ -166,7 +197,7 @@ p {
 }
 
 /* TABLET */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
     #phoneheader {
         width: 100%;
         height: auto;
@@ -187,11 +218,26 @@ p {
 
     #Grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr 1fr 1fr;
-        grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Newsletter Newsletter Newsletter" "Contact Contact Contact";
+        grid-template-columns: 1fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.2fr 0.5fr 0.5fr 0.25fr;
+        grid-template-areas: 
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
+            
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
+            
+            "Green Green Green Green Green Green Climate Climate Climate" 
+            
+            "Green Green Green Green Green Green Climate Climate Climate" 
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" 
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" 
+            
+            "Contact Contact Contact Contact Contact Contact Contact Contact Contact "
+            
+            "Contact Contact Contact Contact Contact Contact Contact Contact Contact";
+        
         min-width: 800px;
-        max-width: 800px;
         margin: auto;
     }
     /* BAGGRUNDSBILLEDER TABLET */
@@ -208,6 +254,13 @@ p {
     #Climate {
         /*background-image: url(img/tablet_miljoe.png);*/
         background-image: url(img/tablet2_miljoe.png);
+        
+    }
+    
+    #ClimateText {
+        padding-left: 1.2em;
+        padding-right: 0.2em;
+
     }
 
     #Newsletter {
@@ -215,9 +268,30 @@ p {
         background-image: url(img/tablet2_nyhedsbrev.png);
     }
 
+    #NewsletterTitle {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    #formular {
+        padding-left: 14.5em;
+    }
+    
     #Contact {
         /*background-image: url(img/tablet_kontakt.png);*/
         background-image: url(img/tablet2_kontakt.png);
+    }
+    
+    .WhiteTitle {
+        text-align: right;
+        padding-right: 5em;
+    }
+    
+    #ContactSub {
+        padding-left: 20em;
+    }
+    #kontaktinfo {
+        padding-left: 23em;
     }
 
 }
@@ -246,51 +320,95 @@ p {
     #Grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.4fr 0.1fr 0.8fr 1.45fr;
         grid-template-areas: 
+                
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
             
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-            
-            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-            
-            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
-                        
-            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
             
             "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
             
             "Green Green Green Green Green Green Green Green Green Contact Contact Contact Contact Contact Contact Contact"
             
             "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-
     }
     
     /* BAGGRUNDSBILLEDER DESKTOP */
     #MonthlyTip {
         background-image: url(img/desktop_maanedenstip.png);
     }
+    
+    #MonthlyTip1 {
+        padding-left: 2em;
+    }
 
+    #Kalkfjerner {
+        padding-left: 3em;
+    }
+    
+    #MonthlySub {
+        padding-left: 4.5em;
+    }
+    
+    #liste {
+        padding-left: 6em;
+    }
+    
     #GreenBalance {
         background-image: url(img/desktop_groenbalance.png);
+    }
+    
+    #GreenBal {
+    padding-left: 5em;
+    }
+    
+    #GreenBalText {
+    padding-left: 8em;
+    padding-right: 0em;
+    padding-top: 0em;
     }
 
     #Climate {
         background-image: url(img/desktop_miljoe.png);
     }
+    
+    #ClimateText {
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0em;
+
+    }
 
     #Newsletter {
         background-image: url(img/desktop_nyhedsbrev.png);
     }
+    
+    #Nlp {
+        padding-top: 1.5em;
+    }
+    
+    #formular {
+    padding-left: 2em;
+        padding-top: 1.5em;
+    }
 
     #Contact {
-        background-image: url(img/desktop_kontakt.png);
+    background-image: url(img/desktop_kontakt.png);
     }
+    
+    .WhiteTitle {
+    padding: 0em;
+    text-align: center
+    }
+    
+    #ContactSub { 
+        padding-left: 2em;
+    }
+    
+    #kontaktinfo {
+        padding-left: 3em;
+    }
+
 
 }
