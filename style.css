@@ -203,7 +203,7 @@ p {
     #Grid {
         display: grid;
         grid-template-columns: 1fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr 0.5fr 0.5fr 0.25fr;
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.2fr 0.5fr 0.5fr 0.25fr;
         grid-template-areas: 
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
             
@@ -219,7 +219,7 @@ p {
             
             "Contact Contact Contact Contact Contact Contact Contact Contact Contact "
             
-            "Contact Contact Contact Contact Contact Contact Contact Contact Contact ";
+            "Contact Contact Contact Contact Contact Contact Contact Contact Contact";
         
         min-width: 800px;
         margin: auto;
@@ -242,7 +242,8 @@ p {
     }
     
     #ClimateText {
-        padding-left: 1em;
+        padding-left: 1.2em;
+        padding-right: 0.2em;
 
     }
 
@@ -251,10 +252,17 @@ p {
         background-image: url(img/tablet2_nyhedsbrev.png);
     }
 
+    #NewsletterTitle {
+        text-align: center;
+        padding-left: 0;
+    }
+    
     #Contact {
         /*background-image: url(img/tablet_kontakt.png);*/
         background-image: url(img/tablet2_kontakt.png);
     }
+    
+    
 
 }
 
