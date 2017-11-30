@@ -48,8 +48,20 @@ p {
 #Grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "Monthly" "Green" "Climate" "Newsletter" "Contact";
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+        "Monthly"
+        "Monthly"
+        "Green"
+        "Green"
+        "Green"
+        "Climate"
+        "Climate"
+        "Newsletter"
+        "Newsletter"
+        "Contact"
+        "Contact"
+        "Contact";
     min-width: 550px;
     max-width: 550px;
     margin: auto;
@@ -73,6 +85,18 @@ p {
     background-position: center;
 }
 
+#GreenBal {
+    font-family: Quicksand;
+    color: white;
+    text-align: center;
+}
+
+#GreenBalText {
+    padding-left: 11em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+}
+
 #Climate {
     grid-area: Climate;
     background: rgb(219, 240, 205);
@@ -80,6 +104,18 @@ p {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+}
+
+#ClimateSub {
+    
+    font-family: Quicksand;
+    text-align: center;
+}
+
+#ClimateText {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
 }
 
 #Newsletter {
@@ -91,15 +127,43 @@ p {
     background-position: center;
 }
 
+#NewsletterTitle {
+    padding-left: 4.5em;
+    color: green;
+    font-family: Quicksand;
+}
+
+#Nlp {
+    padding-left: 0;
+    text-align: center
+}
+
 #Contact {
     grid-area: Contact;
-    background: rgb(97, 255, 94);
+    background: rgb(35, 240, 110);
     background-image: url(img/phone_kontakt.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    
 }
 
+.WhiteTitle {
+    color:white;
+    padding-left: 4.em;
+    font-size: 2em;
+}
+
+#ContactSub {
+    font-weight: bold;
+    font-size: 1em;
+    font-style: italic; 
+    padding-left: 5em;
+}
+
+#kontaktinfo {
+    padding-left: 9em;
+}
 
 /* TABLET */
 @media screen and (min-width: 700px) {
@@ -181,11 +245,31 @@ p {
 
     #Grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Green Green Contact" "Newsletter Newsletter Contact";
-        max-width: 960px;
-        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
+            
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
+            
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
+            
+            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
+                        
+            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
+            
+            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
+            
+            "Green Green Green Green Green Green Green Green Green Contact Contact Contact Contact Contact Contact Contact"
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
+
     }
     
     /* BAGGRUNDSBILLEDER DESKTOP */
