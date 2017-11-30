@@ -76,8 +76,18 @@ p {
     background-position: center;
 }
 
-#MomthlyTip1 {
+#MonthlyTip1 {
     font-family: Quicksand;
+}
+
+#Kalkfjerner {
+    font-family: Quicksand;
+    font-size: 1.3em;
+}
+
+#MonthlySub {
+    font-size: 1.1em;
+    font-style: italic;
 }
 
 #GreenBalance {
