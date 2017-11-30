@@ -45,7 +45,7 @@ p {
 }
 
 /* PHONE */
-#Grid {
+#Grid {   /*Her angives opbygningen af siden i CSS Grid, når siden er sat til mobilvisning. Der er desuden angivet min.- og maks. bredde for sitet i mobilvisning. Margin er sat til auto, således at sitet centreres.*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -67,6 +67,7 @@ p {
     margin: auto;
 }
 
+/**/
 #MonthlyTip {
     grid-area: Monthly;
     background: white;
