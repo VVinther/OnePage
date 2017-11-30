@@ -153,6 +153,12 @@ p {
     text-align: center
 }
 
+#formular {
+    font-family: calibri;
+    padding-left: 7em;
+    padding-top: 1em;
+}
+
 #Contact {
     grid-area: Contact;
     background: rgb(35, 240, 110);
@@ -258,6 +264,10 @@ p {
         padding-left: 0;
     }
     
+    #formular {
+        padding-left: 14.5em;
+    }
+    
     #Contact {
         /*background-image: url(img/tablet_kontakt.png);*/
         background-image: url(img/tablet2_kontakt.png);
@@ -301,16 +311,13 @@ p {
     #Grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
+                
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
             
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-            
-            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-            
-            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
-                        
+                                    
             "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
             
             "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
