@@ -1,6 +1,5 @@
-section {}
-
 /* HEADERS */
+/*Den viser kun mobilheaderen, når sitet er sat til mobilvisning*/
 #phoneheader {
     width: 100%;
     height: auto;
@@ -18,9 +17,9 @@ section {}
     width: 100%;
     height: auto;
     display: none;
-}
+} 
 
-/* TEXT */
+/* Der angives fonte for forskellige klasses og tags.*/
 .Subtitle {
     font-family: Quattrocento;
 
