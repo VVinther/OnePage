@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Sådan mobiler ikke prøver at skalere vores fine CSS til desktop-->
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sådan mobiler ikke prøver at skalere vores fine CSS til desktop -->
+  
     <title>Grøn Balance</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quicksand" rel="stylesheet">
 </head>
 
 <body onload="alert('Dette website er en del af et studieprojekt.')">
+    <!-- Alert der popper op for at vise at det her er et studieprojekt -->
     <div id="pagewrap">
         <header class="Header">
+            <!-- Vores header som indeholder 3 versioner af headerbilledet, et til mobil, et til tablet og et til desktop -->
             <img alt="De Grønne Fattigrøve" src="img/phoneheader.png" id="phoneheader">
             <img alt="De Grønne Fattigrøve" src="img/tabletheader.png" id="tabletheader">
             <img alt="De Grønne Fattigrøve" src="img/desktopheader.png" id="desktopheader">
         </header>
         <div id="Grid">
+            <!-- Alt indenfor den her div er en del af vores CSS Grid -->
+
             <section id="MonthlyTip" class="GridBox">
+                <!-- Månedens Tip -->
                 <h1 id="MonthlyTip1">Månedens Tip</h1>
                 <h2 id="Kalkfjerner">Kalkfjerner</h2>
                 <p id="MonthlySub">Det er slet ikke så svært at fjerne kalk fra sit brusehoved</p>
@@ -28,27 +35,39 @@
                     <li>Lad blanding virke i 30 minutter og skyl af med rent vand</li>
                 </ul>
             </section>
+            <!-- Månedens Tip -->
+
             <section id="GreenBalance" class="GridBox">
+                <!-- Grøn Balance -->
                 <h1 id="GreenBal">Grøn Balance</h1>
                 <p id="GreenBalText">Grøn Balance er en serie af de varer, som du bruger mest i hverdagen. Alle produkter i Grøn Balance serien er udvalgt med respekt og omhu – og udviklet til dig, der passer godt på dig selv og miljøet.<br><br> Koncentreret opvaskemiddel fra Grøn Balance er Svanemærket, og det kan bruges til næsten alle former for rengøring. Du kan derfor holde dit hjem rent, samtidig med at du skåner miljøet for skadelige kemikalier.</p>
             </section>
+            <!-- Grøn Balance -->
+
             <section id="Climate" class="GridBox">
+                <!-- Miljøtekst -->
                 <h1 id="ClimateSub">Pas på miljøet</h1>
                 <p id="ClimateText">Polarisen smelter, orkaner raser og temperaturen stiger. Klimaet ændrer sig drastisk, og det er vores skyld. Vi skal alle passe på kloden - det er den eneste vi har.</p>
             </section>
-            
+            <!-- Miljøtekst -->
+
             <section id="Newsletter" class="GridBox">
+                <!-- Nyhedsbrev -->
                 <h1 id="NewsletterTitle">Tilmeld dig vores nyhedsbrev</h1>
                 <p id="Nlp">Og modtag nye tips hver måned til en<br>bæredygtig livsstil for grønne fattigrøve.</p>
                 <form id="formular">
-                Email:
+                    <!-- E-mail formularboks -->
+                    Email:
                     <input type="email" name="mail"> <input type="submit" value="Tilmeld" id="submit">
                 </form>
+                <!-- E-mail formularboks -->
             </section>
-            
-            
+            <!-- Nyhedsbrev -->
+
             <section id="Contact" class="GridBox">
-               <br><br> <p class="WhiteTitle">Har du nogle spørgsmål?</p>
+                <!-- Kontaktinformation -->
+                <br><br>
+                <p class="WhiteTitle">Har du nogle spørgsmål?</p>
                 <h2 id="ContactSub">Du er velkommen til at ringe til os eller sende os en mail</h2>
                 <p id="kontaktinfo">
                     Grøn Balance
@@ -57,11 +76,15 @@
                     <br>Tlf: 70 20 02 68
                     <br>Mail: kontakt@groenbalance.dk</p>
             </section>
+            <!-- Kontaktinformation -->
+
         </div>
+        <!-- grid -->
         <footer>
 
         </footer>
     </div>
     <!-- pagewrap -->
 </body>
+
 </html>
