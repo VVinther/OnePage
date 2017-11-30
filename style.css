@@ -180,7 +180,7 @@ p {
 }
 
 /* TABLET */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
     #phoneheader {
         width: 100%;
         height: auto;
@@ -201,11 +201,20 @@ p {
 
     #Grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr 1fr 1fr;
-        grid-template-areas: "Monthly Monthly Monthly" "Green Green Climate" "Newsletter Newsletter Newsletter" "Contact Contact Contact";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
+            
+            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
+            
+            "Green Green Climate" 
+            
+            "Newsletter Newsletter Newsletter" 
+            
+            "Contact Contact Contact";
+        
         min-width: 800px;
-        max-width: 800px;
         margin: auto;
     }
     /* BAGGRUNDSBILLEDER TABLET */
