@@ -159,6 +159,15 @@ p {
     padding-top: 1em;
 }
 
+#submit {
+    background: #00a213;
+    color: white;
+    border-color: #00710d;
+    height: 25px;
+    width: 100px;
+    text-shadow: none;
+}
+
 #Contact {
     grid-area: Contact;
     background: rgb(35, 240, 110);
@@ -311,26 +320,19 @@ p {
     #Grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.5fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.1fr 1fr 2fr;
         grid-template-areas: 
                 
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
             
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-                                    
-            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
             
             "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
             
             "Green Green Green Green Green Green Green Green Green Contact Contact Contact Contact Contact Contact Contact"
             
             "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
+        
 
     }
     
@@ -346,13 +348,37 @@ p {
     #Climate {
         background-image: url(img/desktop_miljoe.png);
     }
+    
+        #ClimateText {
+        padding-left: 0em;
+        padding-right: 0em;
+
+    }
 
     #Newsletter {
         background-image: url(img/desktop_nyhedsbrev.png);
+    }
+    
+        #formular {
+        padding-left: 0em;
     }
 
     #Contact {
         background-image: url(img/desktop_kontakt.png);
     }
+    
+        .WhiteTitle {
+        text-align: right;
+        padding-right: 0em;
+    }
+    
+    #ContactSub {
+        padding-left: 0em;
+    }
+    
+    #kontaktinfo {
+        padding-left: 0em;
+    }
+
 
 }
