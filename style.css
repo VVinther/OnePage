@@ -1,5 +1,7 @@
 /* HEADERS */
+
 /*Den viser kun mobilheaderen, når sitet er sat til mobilvisning*/
+
 #phoneheader {
     width: 100%;
     height: auto;
@@ -17,9 +19,10 @@
     width: 100%;
     height: auto;
     display: none;
-} 
+}
 
 /* Der angives fonte for forskellige klasses og tags.*/
+
 .Subtitle {
     font-family: Quattrocento;
 
@@ -45,30 +48,22 @@ p {
 }
 
 /* PHONE */
-#Grid {   /*Her angives opbygningen af siden i CSS Grid, når siden er sat til mobilvisning. Der er desuden angivet min.- og maks. bredde for sitet i mobilvisning. Margin er sat til auto, således at sitet centreres.*/
+
+#Grid {
+    /*Her angives opbygningen af siden i CSS Grid, når siden er sat til mobilvisning. Der er desuden angivet min.- og maks. bredde for sitet i mobilvisning. Margin er sat til auto, således at sitet centreres.*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-areas: 
-        "Monthly"
-        "Monthly"
-        "Green"
-        "Green"
-        "Green"
-        "Climate"
-        "Climate"
-        "Newsletter"
-        "Newsletter"
-        "Contact"
-        "Contact"
-        "Contact";
+    grid-template-areas: "Monthly" "Monthly" "Green" "Green" "Green" "Climate" "Climate" "Newsletter" "Newsletter" "Contact" "Contact" "Contact";
     min-width: 550px;
     max-width: 550px;
     margin: auto;
 }
 
 /**/
-#MonthlyTip { /*Her angives navnet for den del, der skal indeholde månedens tip. Der er desuden angivet en enkeltstående centreret baggrundsbillede i fuldstørrelse for denne rubrik. */
+
+#MonthlyTip {
+    /*Her angives navnet for den del, der skal indeholde månedens tip. Der er desuden angivet en enkeltstående centreret baggrundsbillede i fuldstørrelse for denne rubrik. */
     grid-area: Monthly;
     background: white;
     background-image: url(img/phone_maanedenstip.png);
@@ -78,23 +73,27 @@ p {
 }
 
 /*Fontfamilien for "Månedens tip" angives*/
+
 #MonthlyTip1 {
     font-family: Quicksand;
 }
 
 /*Fontfamilien og størrelsen for "Kalkfjerner" angives*/
+
 #Kalkfjerner {
     font-family: Quicksand;
     font-size: 1.3em;
 }
 
 /*Fontfamilien og stilen for underoverskriften angives*/
+
 #MonthlySub {
     font-size: 1.1em;
     font-style: italic;
 }
 
 /*Fontfamilien for guiden angives*/
+
 #liste {
     font-family: calibri;
 }
@@ -109,6 +108,7 @@ p {
 }
 
 /*Der angives en padding i venstre side for overskriften, så den skubbes mod højre side. Desuden angives der en farve for skriften.*/
+
 #GreenBal {
     font-family: Quicksand;
     color: white;
@@ -131,6 +131,7 @@ p {
 }
 
 /*Teksten centreres*/
+
 #ClimateSub {
     font-family: Quicksand;
     text-align: center;
@@ -184,11 +185,11 @@ p {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    
+
 }
 
 .WhiteTitle {
-    color:white;
+    color: white;
     padding-left: 4.em;
     font-size: 2em;
 }
@@ -196,7 +197,7 @@ p {
 #ContactSub {
     font-weight: bold;
     font-size: 1em;
-    font-style: italic; 
+    font-style: italic;
     padding-left: 5em;
     font-family: Calibri;
 }
@@ -206,6 +207,7 @@ p {
 }
 
 /* TABLET */
+
 @media screen and (min-width: 1000px) {
     #phoneheader {
         width: 100%;
@@ -229,23 +231,8 @@ p {
         display: grid;
         grid-template-columns: 1fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.2fr 0.5fr 0.5fr 0.25fr;
-        grid-template-areas: 
-            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
-            
-            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
-            
-            "Green Green Green Green Green Green Climate Climate Climate" 
-            
-            "Green Green Green Green Green Green Climate Climate Climate" 
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" 
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" 
-            
-            "Contact Contact Contact Contact Contact Contact Contact Contact Contact "
-            
-            "Contact Contact Contact Contact Contact Contact Contact Contact Contact";
-        
+        grid-template-areas: "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" "Green Green Green Green Green Green Climate Climate Climate" "Green Green Green Green Green Green Climate Climate Climate" "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" "Contact Contact Contact Contact Contact Contact Contact Contact Contact " "Contact Contact Contact Contact Contact Contact Contact Contact Contact";
+
         min-width: 800px;
         margin: auto;
     }
@@ -260,9 +247,9 @@ p {
 
     #Climate {
         background-image: url(img/tablet2_miljoe.png);
-        
+
     }
-    
+
     #ClimateText {
         padding-left: 1.2em;
         padding-right: 0.2em;
@@ -271,26 +258,26 @@ p {
     #Newsletter {
         background-image: url(img/tablet2_nyhedsbrev.png);
     }
-    
+
     /*Paddingen i venstre side fik en bestemt værdi i mobilversionen. Det er der ikke behov for her, og derfor skal den nulstilles.*/
     #NewsletterTitle {
         text-align: center;
         padding-left: 0em;
     }
-    
+
     #formular {
         padding-left: 14.5em;
     }
-    
+
     #Contact {
         background-image: url(img/tablet2_kontakt.png);
     }
-    
+
     .WhiteTitle {
         text-align: right;
         padding-right: 5em;
     }
-    
+
     #ContactSub {
         padding-left: 20em;
     }
@@ -302,6 +289,7 @@ p {
 
 
 /* DESKTOP */
+
 @media screen and (min-width: 1300px) {
     #phoneheader {
         width: 100%;
@@ -325,24 +313,14 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 0.4fr 0.1fr 0.8fr 1.45fr;
-        grid-template-areas: 
-                
-            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-            
-            "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
-            
-            "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate"
-            
-            "Green Green Green Green Green Green Green Green Green Contact Contact Contact Contact Contact Contact Contact"
-            
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
+        grid-template-areas: "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" "Green Green Green Green Green Green Green Green Green Climate Climate Climate Climate Climate Climate Climate" "Green Green Green Green Green Green Green Green Green Contact Contact Contact Contact Contact Contact Contact" "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
     }
-    
+
     /* BAGGRUNDSBILLEDER DESKTOP */
     #MonthlyTip {
         background-image: url(img/desktop_maanedenstip.png);
     }
-    
+
     #MonthlyTip1 {
         padding-left: 2em;
     }
@@ -350,66 +328,66 @@ p {
     #Kalkfjerner {
         padding-left: 3em;
     }
-    
+
     #MonthlySub {
         padding-left: 4.5em;
     }
-    
+
     #liste {
         padding-left: 6em;
     }
-    
+
     #GreenBalance {
         background-image: url(img/desktop_groenbalance.png);
     }
-    
+
     #GreenBal {
-    padding-left: 5em;
+        padding-left: 5em;
     }
-    
+
     #GreenBalText {
-    padding-left: 8em;
-    padding-right: 0em;
-    padding-top: 0em;
+        padding-left: 8em;
+        padding-right: 0em;
+        padding-top: 0em;
     }
 
     #Climate {
         background-image: url(img/desktop_miljoe.png);
     }
-    
+
     #ClimateText {
-    padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-top: 0em;
 
     }
 
     #Newsletter {
         background-image: url(img/desktop_nyhedsbrev.png);
     }
-    
+
     #Nlp {
         padding-top: 1.5em;
     }
-    
+
     #formular {
-    padding-left: 2em;
+        padding-left: 2em;
         padding-top: 1.5em;
     }
 
     #Contact {
-    background-image: url(img/desktop_kontakt.png);
+        background-image: url(img/desktop_kontakt.png);
     }
-    
+
     .WhiteTitle {
-    padding: 0em;
-    text-align: center
+        padding: 0em;
+        text-align: center
     }
-    
-    #ContactSub { 
+
+    #ContactSub {
         padding-left: 2em;
     }
-    
+
     #kontaktinfo {
         padding-left: 3em;
     }
