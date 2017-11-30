@@ -320,7 +320,7 @@ p {
     #Grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.5fr 0.1fr 1fr 2fr;
+        grid-template-rows: 1fr 0.4fr 0.1fr 0.8fr 1.45fr;
         grid-template-areas: 
                 
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly"
@@ -332,8 +332,6 @@ p {
             "Green Green Green Green Green Green Green Green Green Contact Contact Contact Contact Contact Contact Contact"
             
             "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Contact Contact Contact Contact Contact Contact Contact"
-        
-
     }
     
     /* BAGGRUNDSBILLEDER DESKTOP */
@@ -344,14 +342,25 @@ p {
     #GreenBalance {
         background-image: url(img/desktop_groenbalance.png);
     }
+    
+    #GreenBal {
+    padding-left: 7.3em;
+    }
+    
+    #GreenBalText {
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0em;
+    }
 
     #Climate {
         background-image: url(img/desktop_miljoe.png);
     }
     
-        #ClimateText {
-        padding-left: 0em;
-        padding-right: 0em;
+    #ClimateText {
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0em;
 
     }
 
@@ -359,22 +368,23 @@ p {
         background-image: url(img/desktop_nyhedsbrev.png);
     }
     
-        #formular {
-        padding-left: 0em;
+    #formular {
+    padding-left: 0em;
     }
 
     #Contact {
-        background-image: url(img/desktop_kontakt.png);
+    background-image: url(img/desktop_kontakt.png);
     }
     
-        .WhiteTitle {
-        text-align: right;
-        padding-right: 0em;
+    .WhiteTitle {
+    text-align: right;
+    padding-right: 0em;
     }
     
-    #ContactSub {
+    #ContactSub { 
         padding-left: 0em;
     }
+
     
     #kontaktinfo {
         padding-left: 0em;
