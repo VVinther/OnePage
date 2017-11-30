@@ -76,6 +76,10 @@ p {
     background-position: center;
 }
 
+#MomthlyTip1 {
+    font-family: Quicksand;
+}
+
 #GreenBalance {
     grid-area: Green;
     background: rgb(70, 225, 86);
@@ -88,7 +92,7 @@ p {
 #GreenBal {
     font-family: Quicksand;
     color: white;
-    text-align: center;
+    padding-left: 7.3em;
 }
 
 #GreenBalText {
