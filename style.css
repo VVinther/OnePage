@@ -174,7 +174,7 @@ p {
 
 #Contact {
     grid-area: Contact;
-    background: rgb(35, 240, 110);
+    background: #36f06a;
     background-image: url(img/phone_kontakt.png);
     background-repeat: no-repeat;
     background-size: 100%;
