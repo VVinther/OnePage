@@ -108,6 +108,7 @@ p {
     background-position: center;
 }
 
+/*Der angives en padding i venstre side for overskriften, så den skubbes mod højre side. Desuden angives der en farve for skriften.*/
 #GreenBal {
     font-family: Quicksand;
     color: white;
@@ -129,8 +130,8 @@ p {
     background-position: center;
 }
 
+/*Teksten centreres*/
 #ClimateSub {
-    
     font-family: Quicksand;
     text-align: center;
 }
@@ -250,17 +251,14 @@ p {
     }
     /* BAGGRUNDSBILLEDER TABLET */
     #MonthlyTip {
-        /*background-image: url(img/tablet_maanedenstip.png);*/
         background-image: url(img/tablet2_maanedenstip.png);
     }
 
     #GreenBalance {
-        /*background-image: url(img/tablet_groenbalance.png);*/
         background-image: url(img/tablet2_groenbalance.png);
     }
 
     #Climate {
-        /*background-image: url(img/tablet_miljoe.png);*/
         background-image: url(img/tablet2_miljoe.png);
         
     }
@@ -272,13 +270,13 @@ p {
     }
 
     #Newsletter {
-        /*background-image: url(img/tablet_nyhedsbrev.png);*/
         background-image: url(img/tablet2_nyhedsbrev.png);
     }
-
+    
+    /*Paddingen i venstre side fik en bestemt værdi i mobilversionen. Det er der ikke behov for her, og derfor skal den nulstilles.*/
     #NewsletterTitle {
         text-align: center;
-        padding-left: 0;
+        padding-left: 0em;
     }
     
     #formular {
