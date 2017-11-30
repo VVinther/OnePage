@@ -91,6 +91,10 @@ p {
     font-style: italic;
 }
 
+#liste {
+    font-family: calibri;
+}
+
 #GreenBalance {
     grid-area: Green;
     background: rgb(70, 225, 86);
