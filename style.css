@@ -202,7 +202,7 @@ p {
     #Grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr 0.5fr 0.25fr;
         grid-template-areas: 
             "Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly Monthly" 
             
@@ -210,7 +210,13 @@ p {
             
             "Green Green Green Green Green Green Climate Climate Climate" 
             
-            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter " 
+            "Green Green Green Green Green Green Climate Climate Climate" 
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" 
+            
+            "Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter Newsletter" 
+            
+            "Contact Contact Contact Contact Contact Contact Contact Contact Contact "
             
             "Contact Contact Contact Contact Contact Contact Contact Contact Contact ";
         
