@@ -68,7 +68,7 @@ p {
 }
 
 /**/
-#MonthlyTip {
+#MonthlyTip { /*Her angives navnet for den del, der skal indeholde månedens tip. Der er desuden angivet en enkeltstående centreret baggrundsbillede i fuldstørrelse for denne rubrik. */
     grid-area: Monthly;
     background: white;
     background-image: url(img/phone_maanedenstip.png);
@@ -77,20 +77,24 @@ p {
     background-position: center;
 }
 
+/*Fontfamilien for "Månedens tip" angives*/
 #MonthlyTip1 {
     font-family: Quicksand;
 }
 
+/*Fontfamilien og størrelsen for "Kalkfjerner" angives*/
 #Kalkfjerner {
     font-family: Quicksand;
     font-size: 1.3em;
 }
 
+/*Fontfamilien og stilen for underoverskriften angives*/
 #MonthlySub {
     font-size: 1.1em;
     font-style: italic;
 }
 
+/*Fontfamilien for guiden angives*/
 #liste {
     font-family: calibri;
 }
